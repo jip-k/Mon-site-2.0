@@ -1,0 +1,21 @@
+{
+  "name": "mon-site",
+  "version": "1.0.0",
+  "description": "presentation de mes services et competences",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss ./monstyle.css --style compressed",
+    "prefix": "postcss ./monstyle.css --use autoprefixer -d ./"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jip-k/Mon-site.git"
+  },
+  "author": "Krsker Jean-Paul",
+  "license": "ISC",
+  "browserslist": "last 4 versions",
+  "bugs": {
+    "url": "https://github.com/jip-k/Mon-site/issues"
+  },
+  "homepage": "https://github.com/jip-k/Mon-site#readme"
+}

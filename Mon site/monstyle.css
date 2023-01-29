@@ -1,0 +1,640 @@
+
+#accueil, .container, footer{
+    margin-left: 8px;
+    margin-right: 8px;
+    font-family: 'Forum';
+}
+
+#maitrise, #certification{
+    margin-bottom: 90px;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 0 4px 0 black;
+    padding-top: 5px;
+    margin-left: -8px;
+    margin-top: -8px;
+    margin-bottom: 20px;
+    font-family: 'Forum';
+    z-index: 10;
+}
+
+header ul{
+    display: flex;
+    flex-direction: row;
+}
+
+header li{
+    margin-right: 10px;
+    padding: 8px;
+    text-align: center;
+    list-style-type: none;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    width: 150px;
+    transition: all 0.3s ease;
+}
+
+header li:hover{
+    background-color: white;
+}
+
+li a:hover {
+    font-weight: bold;
+    color: #3a69d2;
+    text-decoration: none;
+}
+
+#accueil a:hover {
+    font-weight: bold;
+    color: #3a69d2;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+a, i, h3{
+   text-decoration: none;
+   color: #05256d;
+   font-weight: bold;
+}
+
+h2 {
+    color: white;
+}
+
+h3{
+    display: block;
+    padding: 5px;
+    background-color: white;
+    width: 155px;
+    font-size: 1.25em;
+}
+
+i{
+    font-size: 0.54em;  
+}
+
+/** SECTIONS DE LA PAGE**/
+.container{
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 25px;
+    font-size: 0.9em;
+}
+
+/**TITRES DES SECTIONS**/
+.container div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #3a69d2;
+    width: 23%;
+    border-radius: 2px;
+    margin-left: 38%;
+}
+
+/*                                   ACCUEIL                       */
+
+#accueil {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: -7px;
+    margin-left: -8px;
+    font-size: 1.85em;
+    color: #3a69d2;
+    line-height: 40px;
+    text-align: center;
+    font-weight: bold;
+    border: 45px solid #3a69d2;
+}
+
+
+#accueil h1{
+    font-family: 'Comfortaa';
+    background-color: white;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    margin-bottom: 0; /**POUR NE PAS TROP SELOIGNER DU TEXTE**/
+    border-radius: 3px;
+}
+
+#accueil p{
+    display: block;
+    width: 80%;
+    font-size: 0.9em;
+}
+
+/*                                      MAITRISES                                      */
+
+#maitrise{
+    padding-top: 45px;
+    background-image: url("images/maitrises/backm1.png");
+}
+
+h2 + h3{
+    width: 250px;
+}
+
+#maitrise article{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    border-radius: 5px;
+    margin-left: -40px;
+}
+
+#maitrise img {
+    padding: 20px;
+    background-color: white;
+    border-radius: 2px;
+    border: 2px solid #e3ebf3;
+}
+
+figure {
+    position: relative;
+    width: 133px;
+}
+
+figcaption{
+    position: absolute;
+    bottom: 5%; /*** FAIRE MONTER LE BLOCK POUR QUIL TIENNE AU NIVEAU DE LIMAGE ***/
+    width: 167px;
+    height: 70%;
+    padding: 5px; 
+    font-size: 1em;
+    line-height: 20px;
+    opacity: 0;
+    transition: all 0.4s ease;
+}
+
+figure:hover figcaption {
+    color: white;
+    background-color: #4444fb;
+    opacity: 1;
+    bottom: 0;
+}
+
+/*                            CERTIFICATIONS                             */
+
+#certification img{
+    margin: 40px;
+}
+
+button {
+    background-color: white; 
+    border-radius: 0px;
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+button:hover{
+    transform: scale(1.3);
+    background-position: -60px;
+    background-color: #3a69d2;
+}
+
+button:active{
+transform: scale(1)
+}
+
+button a{
+      color: #05256d;
+}
+
+button a:hover {
+    font-weight: bold;
+    color: #114dc7;
+}
+
+/***               PORTFOLIO                        ****/
+
+#portfolio{
+    margin-bottom: 0;
+    background-image: url("images/portfolio/backp.png");
+}
+
+#portfolio div{
+    margin-bottom: 40px;
+}
+
+#portfolio article{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 35px;
+    padding: 10px;
+    width: 26%; 
+    margin: auto;         /*** Faire revenir le block au milieu car décalé à gauche après le width **/
+    border-radius: 2px;
+}
+
+aside{
+    display: flex;
+    flex-direction: row;
+}
+
+#portfolio img:hover{
+    -webkit-filter: grayscale(70%); 
+}
+
+
+#portfolio a{
+    padding: 10px;
+}
+
+#portfolio p{
+    font-family: 'Forum';
+    font-weight: bold;
+}
+
+/***   CONTACTS                     ****/
+
+footer{
+    border: 5px solid black;
+    padding: 20px;
+    background-color: grey;
+    color: white;
+    margin-top: -25PX;
+}
+
+footer a{
+    color: blue;
+}
+
+#contact span{
+    display: flex;
+    flex-direction: row;
+}
+
+#contact ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+}
+
+#contact li{
+    margin-right: 40px;
+}
+
+#reseaux h4{
+    margin-top: 65px;
+}
+
+.telmail  h4{
+    margin-right: 20px;
+}
+
+.telmail p{
+    margin-top: 21px;
+}
+
+#contact h3{
+    margin-left: 0;
+    text-align: center;
+}
+
+#git{
+    margin-top: -15px;
+}
+
+.ml:hover{
+    color: white;   
+}
+
+/***                            POLICE                              ***/
+
+@font-face {
+    font-family: 'Forum';
+    src: url('police/Forum-Regular.woff');
+    src: url('police/Forum-Regular.otf') format('truetype'),
+         url('police/Forum-Regular.woff') format('woff'),
+         url('police/Forum-Regular.eot?#iefix') format('embedded-opentype'),
+         url('police/Forum-Regular.svg#QuadrantaBold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Comfortaa';
+    src: url('police/Comfortaa-Regular.woff');
+    src: url('police/Comfortaa-Regular.otf') format('truetype'),
+         url('police/Comfortaa-Regular.woff') format('woff'),
+         url('police/Comfortaa-Regular.eot?#iefix') format('embedded-opentype'),
+         url('police/Comfortaa-Regular.svg#QuadrantaBold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*                  RESPONSIVE                        */
+
+/* POUR MOBILES */
+@media (max-width: 812px)
+{
+
+    h3{
+        font-size: 0.95em;
+    }
+
+    h2+h3{
+        width: 80%;
+    }
+
+    /*------------header------------*/
+
+    header{
+        padding-bottom: 40px;
+        background-image: url("images/cieltel.png");
+        justify-content: flex-end;
+        height: 80px;
+    }
+
+    header ul{ 
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 100%;
+    }
+
+    header li{
+        margin-left: 0;
+        padding: 10px;
+    }
+
+    .container{
+        width: 100%;
+        margin-left: -2px;
+        margin-right: 0;
+        padding: 15px 2px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #logo{
+        width:  35px;
+        height: 35px;
+        margin-right: -40px;
+    }
+
+    .menu_resp{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        max-width: 28%;
+     
+    }
+
+    /** -----------------------ACCUEIL------------------------ **/
+
+    #accueil{
+        padding-top: 30px;
+        font-size: 1.58em;
+    }
+
+    #accueil h1{
+        font-size: 0.73em;
+        width: 88%;
+    }
+
+    /**------------------------MAITRISES-------------------------**/
+
+    #maitrise{
+        background-image: url("images/maitrises/backmtel.png");
+    }
+
+    .container div{
+        width: 90%;
+        margin-left: 0;
+        
+    }
+
+    #maitrise article{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%; 
+    }
+
+    figcaption{
+        bottom: 0;
+        height: 75%;
+    }
+
+    /**---------------------CERTIFICATIONS------------------**/
+
+    #certification{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #certification img{
+        margin: 15px 5px;
+    }
+
+    button{
+        background-color: #4444fb;
+        transform: scale(1.2);
+    }
+
+    button:active{
+        transform: scale(1);
+    }
+
+    button::after{
+        transform: scale(1.2);
+        background-color: #4444fb;
+    }
+
+    /**--------------------PORTFOLIO------------------------**/
+
+    #portfolio{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #portfolio article{
+        width: 95%;
+        padding: 5px;
+    }
+
+    /**--------------------CONTACT--------------------------**/
+
+    footer{
+        padding: 10px;
+        width: 95%;
+        margin-left: -5px;
+    }
+
+    #fb {
+        width: 35px;
+        height: 35px;
+        margin-top: 12px;
+    }
+
+    #link{
+        width: 75px;
+        height: 75px;
+    }
+
+    #work{
+        width: 80px;
+        height: 80px;
+    }
+
+    #git{
+        width: 70px;
+        height: 70px;
+        margin-top: 0;
+    }
+
+    #reseaux{
+        text-align: center;
+    }
+
+    #reseaux ul{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        margin-left: -15px;
+    }
+
+    #contact li{
+        margin-right: 15px;
+    }
+
+    #contact span{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .telmail{
+        line-height: 3px;
+        margin-bottom: 20px;
+    }
+}
+
+/** POUR TABLETTES **/
+
+@media (min-width: 768px) and (max-width: 1024px)
+{
+    h3{
+        font-size: 1.5em;
+    }
+
+    h2+h3{
+        width: 80%;
+    }
+
+    /** HEADER **/
+
+    header{
+        background-image: url("images/ciel4.png");
+        height: 100px;
+    }
+
+    header ul{ 
+        font-size: 1.3em;
+    }
+
+    header li{
+        padding-right: 30px;
+        margin-right: 20px;
+    }
+
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    
+    /** -----------------------ACCUEIL------------------------ **/
+
+    #accueil{
+        font-size: 2em;
+    }
+
+    #accueil h1{
+        font-size: 1em;
+    }
+
+    /**------------------------MAITRISES-------------------------**/
+
+
+    .container div{
+        width: 90%;
+    }
+
+    figcaption{
+        font-size: 1.2em;
+    }
+
+    /**   PORTFOLIO  **/
+
+    .projet h3{
+        width: 30%;
+    }
+
+    /**--------------------CONTACT--------------------------**/
+
+    footer{
+        margin-left: 5px;
+    }
+
+    #fb {
+        width: 75px;
+        height: 75px;
+    }
+
+    #link{
+        width: 125px;
+        height: 125px;
+    }
+
+    #work{
+        width: 140px;
+        height: 140px;
+    }
+
+    #git{
+        width: 125px;
+        height: 125px;
+        margin-top: 0;
+    }
+
+    #reseaux{
+        text-align: left;
+    }
+
+    footer a, .telmail, #reseaux{
+        font-size: 1.7em;
+    }
+
+}
+
+
+
+
+
+
+
